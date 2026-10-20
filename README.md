@@ -21,4 +21,19 @@
 
 ## установка
 
-нужны пк-версия игры и melonloader. если melonloader уже установлен, помести `MetelCheat.dll` в папку `Mods` игры.
+мод рассчитан на пк-версию игры и melonloader 0.7.3. если melonloader уже установлен, помести `MetelCheat.dll` в папку `Mods` игры.
+
+## сборка
+
+проект использует `.net framework 4.7.2`. перед сборкой укажи в `mod/MetelCheat.csproj` локальные пути к игре и библиотекам melonloader, затем выполни из корня проекта:
+
+```powershell
+dotnet build mod/MetelCheat.csproj -c Release
+```
+
+собранный файл появится в `mod/bin/Release/MetelCheat.dll`.
+
+## файлы проекта
+
+- `mod/` — исходный код мода и проект сборки.
+- `assets/metel-cheat-ui.svg` — векторный макет меню.
